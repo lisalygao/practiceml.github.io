@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Additional Content</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Page</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Background color set to white */
+}
+
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow to the frame */
+  background-color: white; /* Background color for the content */
+  width: 80%; /* Width of the container */
+  max-width: 960px; /* Maximum width of the content frame */
+  margin: auto; /* Center the frame in the page */
+  padding: 20px; /* Padding inside the frame */
+  text-align: center; /* Align the text to the center */
+}
+
+.media, p {
+  margin: 20px auto; /* Centers the content and adds space around */
+  text-align: center; /* Align the text to the center */
+}
+
+img {
+  width: 100%; /* Make image take the full width of their container */
+  height: auto; /* Adjust the height automatically */
+  margin-bottom: 20px; /* Space below image */
+}
+</style>
 </head>
 <body>
-    <h1>Our Services</h1>
-    <img src="data_consulting.webp" alt="Data Consulting">
-    <img src="teach_hiit.webp" alt="Teach HIIT">
-    <br>
-    <a href="index.html"><button>Back to Home</button></a>
+
+<div class="container">
+
+  <img src="data_consulting.webp" alt="Data Consulting" class="media">
+  <p>Empower your business with cutting-edge data consulting services...</p>
+
+  <img src="teach_hiit.webp" alt="Teach HIIT" class="media">
+  <p>Unleash your inner strength with our high-intensity interval training...</p>
+
+</div>
+
 </body>
 </html>
