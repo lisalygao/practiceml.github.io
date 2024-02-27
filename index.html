@@ -9,12 +9,13 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* background color for the whole page */
+  background-color: #007BFF; /* Changed background color to blue */
 }
 
 .container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow to the frame */
   background-color: white; /* Background color for the content */
+  width: 80%; /* Width of the container */
   max-width: 960px; /* Maximum width of the content frame */
   margin: auto; /* Center the frame in the page */
   padding: 20px; /* Padding inside the frame */
@@ -24,21 +25,25 @@ body, html {
 .header, .cta-button {
   background-color: #4CAF50; /* This is the background color for the title and button */
   color: white;
-  margin: -20px -20px 20px -20px; /* Aligns the header and button to the edges of the frame */
   padding: 10px 0;
   text-align: center;
   font-size: 2em;
 }
 
 .media, p {
-  max-width: 800px; /* Maximum width of the content */
   margin: 20px auto; /* Centers the content and adds space around */
   text-align: center; /* Align the text to the center */
 }
 
-img, video {
-  width: 100%; /* Make image and video take the full width of their container */
+img {
+  width: 100%; /* Make image take the full width of their container */
   height: auto; /* Adjust the height automatically */
+}
+
+video {
+  width: 50%; /* Make video smaller in width */
+  height: auto; /* Adjust the height automatically */
+  margin-bottom: 20px; /* Space below video */
 }
 
 button {
@@ -65,7 +70,7 @@ button {
 
   <p>With a physique sculpted by dedication and long hair symbolizing her grace, she is more than just a figure; she's a symbol of balance and ambition...</p>
 
-  <video src="data_video.mp4" autoplay muted loop class="media"></video>
+  <video src="data_video.mp4" autoplay muted loop></video>
 
   <div class="cta-button">
       <a href="content.html" style="text-decoration: none;"><button>Unleash Your Data Force</button></a>
