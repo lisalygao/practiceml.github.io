@@ -16,7 +16,7 @@ body, html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: white;
   width: 80%;
-  max-width: 960px;
+  max-width: 960px; /* Same max width as the container in index.html */
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -31,14 +31,15 @@ body, html {
 }
 
 .media, .header, p {
-  max-width: 800px; /* Ensures the header has the same max width as the images */
+  max-width: 800px; /* Ensuring the images have the same max width as index.html */
+  width: 100%; /* Images take full width of their container */
   margin: 20px auto;
   text-align: center;
 }
 
 img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Full width of their container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 p {
@@ -51,9 +52,9 @@ p {
 
 <div class="container">
 
-  
+  <a href="index.html" style="text-decoration: none;">
     <div class="header">Meet a dynamic force in both the worlds of data science and fitness: a wonder woman who beautifully blends her passions to inspire and transform.</div>
-  
+  </a>
 
   <img src="data_consulting.webp" alt="Data Consulting" class="media">
   <p>Empower your business with cutting-edge data consulting services...</p>
