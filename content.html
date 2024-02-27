@@ -9,38 +9,41 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: white; /* Background color set to white */
+  background-color: white;
 }
 
 .container {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow to the frame */
-  background-color: white; /* Background color for the content */
-  width: 80%; /* Width of the container */
-  max-width: 960px; /* Maximum width of the content frame */
-  margin: auto; /* Center the frame in the page */
-  padding: 20px; /* Padding inside the frame */
-  text-align: center; /* Align the text to the center */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  width: 80%;
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .header {
-  background-color: #4CAF50; /* Same background color as index page */
+  background-color: #4CAF50;
   color: white;
   padding: 10px 0;
-  text-align: center;
   font-size: 2em;
-  margin: 0 auto; /* Aligns the header to the center */
-  max-width: 800px; /* Maximum width of the title block to match the index page */
+  text-align: center;
 }
 
-.media {
-  width: 100%; /* Image width same as on index page */
-  height: auto; /* Adjust the height automatically */
-  margin: 20px 0; /* Space around the image */
+.media, .header, p {
+  max-width: 800px; /* Ensures the header has the same max width as the images */
+  margin: 20px auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 p {
-  margin: 20px auto; /* Centers the content and adds space around */
-  text-align: center; /* Align the text to the center */
+  margin: 20px auto;
+  text-align: center;
 }
 </style>
 </head>
@@ -48,9 +51,9 @@ p {
 
 <div class="container">
 
-  
-    <div class="header"><a href="index.html" style="text-decoration: none;">Meet a dynamic force in both the worlds of data science and fitness: a wonder woman who beautifully blends her passions to inspire and transform.</a></div>
-  
+  <a href="index.html" style="text-decoration: none;">
+    <div class="header">Meet a dynamic force in both the worlds of data science and fitness: a wonder woman who beautifully blends her passions to inspire and transform.</div>
+  </a>
 
   <img src="data_consulting.webp" alt="Data Consulting" class="media">
   <p>Empower your business with cutting-edge data consulting services...</p>
