@@ -22,28 +22,34 @@ body, html {
   text-align: center; /* Align the text to the center */
 }
 
-.media {
+.header {
+  background-color: #4CAF50; /* Background color for the title */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.media, p {
   width: 100%; /* Image width same as on index page */
   height: auto; /* Adjust the height automatically */
   margin: 20px 0; /* Space around the image */
-}
-
-p {
-  margin: 20px auto; /* Centers the content and adds space around */
-  text-align: center; /* Align the text to the center */
 }
 </style>
 </head>
 <body>
 
-<div class="container">
+<a href="index.html" style="text-decoration: none;">
+  <div class="header">Meet a dynamic force in both the worlds of data science and fitness: a wonder woman who beautifully blends her passions to inspire and transform.</div>
+</a>
 
+<div class="container">
   <img src="data_consulting.webp" alt="Data Consulting" class="media">
   <p>Empower your business with cutting-edge data consulting services...</p>
     
   <img src="teach_hiit.webp" alt="Teach HIIT" class="media">
   <p>Unleash your inner strength with our high-intensity interval training...</p>
-
 </div>
 
 </body>
