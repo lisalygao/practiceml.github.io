@@ -8,60 +8,70 @@
 body, html {
   height: 100%;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #4CAF50; /* Background color for the whole page */
+  padding: 0;
+  background-color: #f4f4f4; /* background color for the whole page */
 }
 
-header {
-  width: 100%;
-  background-color: #4CAF50; /* Same background color as the page title */
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow to the frame */
+  background-color: white; /* Background color for the content */
+  max-width: 960px; /* Maximum width of the content frame */
+  margin: auto; /* Center the frame in the page */
+  padding: 20px; /* Padding inside the frame */
+  text-align: center; /* Align the text to the center */
+}
+
+.header, .cta-button {
+  background-color: #4CAF50; /* This is the background color for the title and button */
   color: white;
+  margin: -20px -20px 20px -20px; /* Aligns the header and button to the edges of the frame */
   padding: 10px 0;
   text-align: center;
   font-size: 2em;
 }
 
-img, video {
-  width: 80vw; /* 80% of the viewport width */
-  height: auto; /* Maintain the aspect ratio */
+.media {
+  width: 100%; /* Width for image and video */
+  height: auto; /* Adjust the height automatically */
+  margin-bottom: 20px; /* Space below image and video */
 }
 
-video {
-  position: relative; /* Needed to position the button over the video */
+img, video {
+  width: 100%; /* Make image and video take the full width of their container */
+  height: auto; /* Adjust the height automatically */
 }
 
 button {
-  position: absolute; /* Position the button over the video */
-  bottom: 10px; /* At the bottom of the video */
-  left: 50%;
-  transform: translateX(-50%); /* Center the button */
-  background-color: #4CAF50; /* Same background color as the page title */
+  background-color: #4CAF50; /* Color of the button */
   color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   cursor: pointer;
-}
-
-@media (min-width: 1024px) {
-  img, video {
-    max-width: 600px; /* Fixed size for larger screens */
-    height: auto; /* Maintain the aspect ratio */
-  }
 }
 </style>
 </head>
 <body>
-<header>Unleash Your Data Force</header>
-    <p>Meet a dynamic force in both the worlds of data science and fitness: a wonder woman who beautifully blends her passions to inspire and transform.</p>
-    <img src="main_image.webp" alt="Dynamic force in data science and fitness">
-    <p>Meet a dynamic force in both the worlds of data science and fitness: a wonder woman who beautifully blends her passions to inspire and transform.</p>
-    <div style="position: relative; width: 80vw;"> <!-- Container for the video and button -->
-        <video src="data_video.mp4" autoplay muted loop></video>
-        <a href="content.html"><button>Unleash Your Data Force</button></a>
-    </div>
+
+<div class="container">
+
+  <div class="header">Meet a dynamic force in both the worlds of data science and fitness: a wonder woman who beautifully blends her passions to inspire and transform.</div>
+
+  <img src="main_image.webp" alt="Dynamic force in data science and fitness" class="media">
+
+  <p>With a physique sculpted by dedication and long hair symbolizing her grace, she is more than just a figure; she's a symbol of balance and ambition...</p>
+
+  <video src="data_video.mp4" autoplay muted loop class="media"></video>
+
+  <div class="cta-button">
+      <a href="content.html" style="text-decoration: none;"><button>Unleash Your Data Force</button></a>
+  </div>
+
+</div>
+
 </body>
 </html>
